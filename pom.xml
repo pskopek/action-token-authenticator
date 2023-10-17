@@ -27,7 +27,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <version.rhsso>7.6.5-redhat-00001</version.rhsso>
+        <version.keycloak>18.0.9.redhat-00001</version.keycloak>
         <version.jboss-logging>3.4.1.Final-redhat-00001</version.jboss-logging>
         <arquillian-graphene.version>2.3.2</arquillian-graphene.version>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -39,25 +39,25 @@
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-core</artifactId>
-            <version>${version.rhsso}</version>
+            <version>${version.keycloak}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-server-spi</artifactId>
-            <version>${version.rhsso}</version>
+            <version>${version.keycloak}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-server-spi-private</artifactId>
-            <version>${version.rhsso}</version>
+            <version>${version.keycloak}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-services</artifactId>
-            <version>${version.rhsso}</version>
+            <version>${version.keycloak}</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.google.guava</groupId>

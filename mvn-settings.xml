@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+
+    <profiles>
+
+        <profile>
+            <id>redhat-ga-repository</id>
+            <repositories>
+                <repository>
+                    <id>redhat-ga-repository</id>
+                    <url>https://maven.repository.redhat.com/ga/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>redhat-ga-plugin-repository</id>
+                    <url>https://maven.repository.redhat.com/ga/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+
+    </profiles>
+
+    <localRepository>mvn-repository</localRepository>
+
+    <activeProfiles>
+        <activeProfile>redhat-ga-repository</activeProfile>
+    </activeProfiles>
+
+</settings>																																										
